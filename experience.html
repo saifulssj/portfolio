@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Experience</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="skills.html">Skills</a>
+            <a href="experience.html" class="active">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="experience">
+        <div class="exp-item">
+            <div class="exp-icon"><i class="fas fa-video"></i></div>
+            <div class="exp-content">
+                <h3>junior Video Editor</h3>
+                <span>2022 - Present</span>
+                <p>Working on a team of editors to create high-quality video content for digital platforms, ensuring seamless post-production workflows.</p>
+            </div>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-icon"><i class="fas fa-film"></i></div>
+            <div class="exp-content">
+                <h3>Freelance Video Editor</h3>
+                <span>2023 - present</span>
+                <p>Worked with multiple clients to edit promotional videos, advertisements, and short films with a focus on storytelling and smooth transitions.</p>
+            </div>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-icon"><i class="fas fa-photo-video"></i></div>
+            <div class="exp-content">
+                <h3>Assistant Editor - Sakil Studios</h3>
+                <span>2018 - 2024</span>
+                <p>Assisted in editing feature films and TV series, performing color grading, audio syncing, and post-production refinements.</p>
+            </div>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="exp-content">
+                <h3>Intern - Video Production</h3>
+                <span>2017 - 2018</span>
+                <p>Gained hands-on experience in video editing software, working on corporate videos, documentaries, and social media content.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ornob Shakil. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const nav = document.querySelector("nav");
+            const toggle = document.querySelector(".menu-toggle");
+
+            toggle.addEventListener("click", function () {
+                nav.classList.toggle("active");
+            });
+        });
+    </script>
+
+</body>
+</html>

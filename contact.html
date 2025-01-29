@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="skills.html">Skills</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="contact">
+        <h2>Get in Touch</h2>
+        <p>Fill out the form below or reach me on social media!</p>
+
+        <form action="https://formsubmit.co/shakilislam6000@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="input-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="input-group">
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="input-group">
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        
+        
+        
+
+        <div class="social-media">
+            <a href="https://www.facebook.com/share/18hYMCvLtT/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/ornob_shakil_?igsh=MWdzbzk3OGcyanN4Zw=="><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ornob Shakil. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const nav = document.querySelector("nav");
+            const toggle = document.querySelector(".menu-toggle");
+
+            toggle.addEventListener("click", function () {
+                nav.classList.toggle("active");
+            });
+        });
+    </script>
+
+</body>
+</html>
